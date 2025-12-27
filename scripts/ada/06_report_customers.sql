@@ -24,6 +24,12 @@ Highlights:
 -- =============================================================================
 -- Create Report: gold.report_customers
 -- =============================================================================
+IF OBJECT_ID('gold.report_products', 'V') IS NOT NULL
+    DROP VIEW gold.report_products;
+GO
+
+CREATE VIEW gold.report_products AS
+
 WITH base_query AS (
 /*---------------------------------------------------------------------------
 1) Base Query: Retrieves core columns from tables
