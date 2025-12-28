@@ -53,23 +53,23 @@ WITH base_query AS (
 /*---------------------------------------------------------------------------
 2) Customer Aggregations: Summarizes key metrics at the customer level
 ---------------------------------------------------------------------------*/
-SELECT
-	customer_key,
-	customer_number,
-	customer_name,
-	age,
-	COUNT(DISTINCT order_number) AS total_orders,
-	SUM(sales_amount) AS total_sales,
-	SUM(quantity) AS total_quantity,
-	COUNT(DISTINCT product_key) AS total_products,
-	MAX(order_date) AS last_order_date,
-	DATEDIFF(month, MIN(order_date), MAX(order_date)) AS lifespan
-FROM base_query
-GROUP BY
-	customer_key,
-	customer_number,
-	customer_name,
-	age
+	SELECT
+		customer_key,
+		customer_number,
+		customer_name,
+		age,
+		COUNT(DISTINCT order_number) AS total_orders,
+		SUM(sales_amount) AS total_sales,
+		SUM(quantity) AS total_quantity,
+		COUNT(DISTINCT product_key) AS total_products,
+		MAX(order_date) AS last_order_date,
+		DATEDIFF(month, MIN(order_date), MAX(order_date)) AS lifespan
+	FROM base_query
+	GROUP BY
+		customer_key,
+		customer_number,
+		customer_name,
+		age
 )
 SELECT
 	customer_key,
