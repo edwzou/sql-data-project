@@ -1,4 +1,4 @@
-# sql-data-warehouse-project
+# sql-data-project
 
 A compact example project that demonstrates building a layered SQL data warehouse (bronze → silver → gold) using plain SQL scripts and CSV data.
 
