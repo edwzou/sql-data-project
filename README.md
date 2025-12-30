@@ -1,4 +1,4 @@
-# sql-data-project
+# Enterprise Data Warehouse
 
 A comprehensive SQL data project that demonstrates building a layered data warehouse (bronze → silver → gold), performing exploratory data analysis (EDA), and executing advanced data analytics (ADA) using plain SQL scripts and CSV data.
 
