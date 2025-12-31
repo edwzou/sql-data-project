@@ -263,7 +263,3 @@ Or open the file `tests/quality_checks_silver.sql` in your SQL editor to run che
 **License**
 
 This project is provided as-is for learning and prototyping. See `LICENSE` for details.
-
----
-
-If you want, I can also add example connection config, parameterized run scripts (PowerShell), or CI steps to run these SQL checks automatically. Which would you prefer next?
