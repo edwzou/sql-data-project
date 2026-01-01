@@ -254,12 +254,6 @@ sqlcmd -S <SERVER> -U <USER> -P <PASSWORD> -i tests\quality_checks_silver.sql
 
 Or open the file `tests/quality_checks_silver.sql` in your SQL editor to run checks selectively.
 
-**Contributing**
-
-- Add scripts under `scripts/` following the bronze→silver→gold layering.
-- Keep sample CSVs in `datasets/source-*` for reproducible runs.
-- Open an issue or PR for enhancements or to add new checks/data.
-
 **License**
 
 This project is provided as-is for learning and prototyping. See `LICENSE` for details.
